@@ -194,4 +194,286 @@
         /* COLLECTION */
 
         .collection {
-            padding: 120
+            padding: 120px 8%;
+            border-top: 1px solid #282722;
+        }
+
+        .collection-title {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            letter-spacing: 4px;
+            color: #716c63;
+        }
+
+        .collection h3 {
+            margin-top: 20px;
+            font-size: clamp(35px, 7vw, 70px);
+            font-weight: normal;
+        }
+
+        .items {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .item {
+            min-height: 300px;
+            border: 1px solid #2c2a25;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            background: #171613;
+        }
+
+        .item-number {
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            letter-spacing: 3px;
+            color: #716c63;
+        }
+
+        .item h4 {
+            margin-top: 8px;
+            font-size: 23px;
+            font-weight: normal;
+        }
+
+        .item p {
+            margin-top: 5px;
+            color: #777168;
+            font-size: 13px;
+        }
+
+        /* PHILOSOPHY */
+
+        .philosophy {
+            min-height: 80vh;
+            padding: 120px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-top: 1px solid #282722;
+        }
+
+        .philosophy p {
+            max-width: 850px;
+            font-size: clamp(28px, 5vw, 58px);
+            line-height: 1.2;
+            font-style: italic;
+        }
+
+        /* FOOTER */
+
+        footer {
+            padding: 45px 8%;
+            border-top: 1px solid #282722;
+            display: flex;
+            justify-content: space-between;
+            color: #625d54;
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            letter-spacing: 2px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 22px 6%;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 8px;
+            }
+
+            .hero {
+                padding: 110px 7% 70px;
+            }
+
+            h1 {
+                letter-spacing: -4px;
+            }
+
+            .chapter {
+                padding: 100px 7%;
+            }
+
+            .collection {
+                padding: 100px 7%;
+            }
+
+            .items {
+                grid-template-columns: 1fr;
+            }
+
+            .item {
+                min-height: 240px;
+            }
+
+            .philosophy {
+                padding: 100px 7%;
+            }
+
+            footer {
+                padding: 35px 7%;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MODERN MYTH</div>
+
+    <nav>
+        <a href="#wanderer">CHAPTER I</a>
+        <a href="#collection">COLLECTION</a>
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            STORIES WORTH WEARING · EST. 2026
+        </div>
+
+        <h1>
+            MODERN<br>
+            MYTH
+        </h1>
+
+        <div class="tagline">
+            Stories Worth Wearing.
+        </div>
+
+        <div class="hero-poem">
+            <span>Some stories are never written.</span>
+            <span>They are stitched into silence,</span>
+            <span>carried through the years,</span>
+            <span>and worn like a secret.</span>
+        </div>
+
+        <a class="enter" href="#wanderer">
+            ENTER THE STORY
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CHAPTER I -->
+
+<section class="chapter" id="wanderer">
+
+    <div class="chapter-inner">
+
+        <div class="chapter-number">
+            CHAPTER I · 2026
+        </div>
+
+        <h2>
+            THE<br>
+            WANDERER
+        </h2>
+
+        <div class="chapter-description">
+            A story for those who never belonged to one road.
+        </div>
+
+        <div class="poem">
+
+            He left without a map,<br>
+            carrying only the clothes on his back<br>
+            and a sky full of places<br>
+            he had never seen.
+
+            <strong>
+                Some people search for a home.<br>
+                Some become one along the way.
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COLLECTION -->
+
+<section class="collection" id="collection">
+
+    <div class="collection-title">
+        CHAPTER I · THE WANDERER
+    </div>
+
+    <h3>
+        Fragments of the story.
+    </h3>
+
+    <div class="items">
+
+        <div class="item">
+            <div class="item-number">THE WANDERER / 01</div>
+            <h4>The Road</h4>
+            <p>Overshirt · Coming soon</p>
+        </div>
+
+        <div class="item">
+            <div class="item-number">THE WANDERER / 02</div>
+            <h4>The Stranger</h4>
+            <p>Trousers · Coming soon</p>
+        </div>
+
+        <div class="item">
+            <div class="item-number">THE WANDERER / 03</div>
+            <h4>The Last Suitcase</h4>
+            <p>Jacket · Coming soon</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PHILOSOPHY -->
+
+<section class="philosophy">
+
+    <p>
+        Every garment carries a story.<br>
+        Every story belongs to someone.
+    </p>
+
+</section>
+
+
+<footer>
+
+    <span>© 2026 MODERN MYTH</span>
+
+    <span>STORIES WORTH WEARING</span>
+
+</footer>
+
+</body>
+    </html>
