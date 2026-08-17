@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>MODERN MYTH — Stories Worth Wearing</title>
 
     <style>
@@ -41,3 +42,106 @@
 
         .hero {
             min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8%;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: 5px;
+            color: #9b9588;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(55px, 12vw, 140px);
+            font-weight: normal;
+            line-height: 0.9;
+            letter-spacing: -5px;
+        }
+
+        .tagline {
+            margin-top: 35px;
+            font-size: 22px;
+            font-style: italic;
+            color: #b9b1a2;
+        }
+
+        .intro {
+            max-width: 500px;
+            margin-top: 25px;
+            line-height: 1.8;
+            color: #8f8a80;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 28px;
+            border: 1px solid #777064;
+            color: #e8e1d5;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 12px;
+        }
+
+        .button:hover {
+            background: #e8e1d5;
+            color: #11110f;
+        }
+
+        footer {
+            padding: 30px 7%;
+            border-top: 1px solid #33312b;
+            color: #6f6a61;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MODERN MYTH</div>
+
+        <nav>
+            <a href="#">SHOP</a>
+            <a href="#">STORY</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+
+        <div class="eyebrow">EST. 2026 · DHAKA</div>
+
+        <h1>
+            MODERN<br>
+            MYTH
+        </h1>
+
+        <div class="tagline">
+            Stories Worth Wearing.
+        </div>
+
+        <p class="intro">
+            Clothing for those who carry their own mythology.
+            Where old stories meet new silhouettes,
+            and every piece becomes a chapter.
+        </p>
+
+        <div>
+            <a href="#" class="button">ENTER THE COLLECTION</a>
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 MODERN MYTH — STORIES WORTH WEARING.
+    </footer>
+
+</body>
+</html>
