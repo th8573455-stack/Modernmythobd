@@ -48,13 +48,18 @@
             letter-spacing: 5px;
         }
 
+        nav {
+            display: flex;
+            gap: 22px;
+        }
+
         nav a {
             text-decoration: none;
-            margin-left: 22px;
             font-family: Arial, sans-serif;
             font-size: 10px;
             letter-spacing: 2px;
-            opacity: 0.75;
+            opacity: 0.7;
+            transition: 0.3s;
         }
 
         nav a:hover {
@@ -289,11 +294,23 @@
 
             header {
                 padding: 22px 6%;
+                align-items: flex-start;
+            }
+
+            .logo {
+                font-size: 13px;
+                letter-spacing: 4px;
+            }
+
+            nav {
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
             }
 
             nav a {
-                margin-left: 10px;
                 font-size: 8px;
+                letter-spacing: 1.5px;
             }
 
             .hero {
@@ -336,12 +353,17 @@
 <body>
 
 <header>
-    <div class="logo">MODERN MYTH</div>
+
+    <div class="logo">
+        MODERN MYTH
+    </div>
 
     <nav>
         <a href="#wanderer">CHAPTER I</a>
+        <a href="#midnight">CHAPTER II</a>
         <a href="#collection">COLLECTION</a>
     </nav>
+
 </header>
 
 
@@ -380,7 +402,7 @@
 </section>
 
 
-<!-- CHAPTER I -->
+<!-- CHAPTER I — THE WANDERER -->
 
 <section class="chapter" id="wanderer">
 
@@ -415,9 +437,9 @@
 
     </div>
 
-</section> 
-
 </section>
+
+
 <!-- CHAPTER II — THE MIDNIGHT -->
 
 <section class="chapter" id="midnight">
@@ -440,26 +462,14 @@
         <div class="poem">
 
             At midnight,<br>
-            the city forgets its name.<br>
-            The streets grow quiet,<br>
-            and the heart remembers<br>
-            what daylight made it hide.
+            the world grows still.<br>
+            The moon leans close,<br>
+            and every hidden heart<br>
+            remembers what it cannot forget.
 
             <strong>
-                Somewhere, a window stays awake.<br>
-                Somewhere, a lonely heart<br>
-                mistakes the moon for company.
-            </strong>
-
-            <strong>
-                And for a moment,<br>
-                the darkness feels less like an ending<br>
-                and more like a place<br>
-                where forgotten things come alive.
-            </strong>
-
-            <strong>
-                Some things are only beautiful in the dark.
+                Somewhere between darkness and dawn,<br>
+                we become who daylight never knew.
             </strong>
 
         </div>
@@ -467,56 +477,7 @@
     </div>
 
 </section>
-   
-    <!-- CHAPTER II — THE MIDNIGHT -->
 
-<section class="chapter" id="midnight">
-
-    <div class="chapter-inner">
-
-        <div class="chapter-number">
-            CHAPTER II · 2026
-        </div>
-
-        <h2>
-            THE<br>
-            MIDNIGHT
-        </h2>
-
-        <div class="chapter-description">
-            A story for the hours that belong to no one.
-        </div>
-
-        <div class="poem">
-
-            At midnight,<br>
-            the city forgets its name.<br>
-            The streets grow quiet,<br>
-            and the heart remembers<br>
-            what daylight made it hide.
-
-            <strong>
-                Somewhere, a window stays awake.<br>
-                Somewhere, a lonely heart<br>
-                mistakes the moon for company.
-            </strong>
-
-            <strong>
-                And for a moment,<br>
-                the darkness feels less like an ending<br>
-                and more like a place<br>
-                where forgotten things come alive.
-            </strong>
-
-            <strong>
-                Some things are only beautiful in the dark.
-            </strong>
-
-        </div>
-
-    </div>
-
-</section>
 
 <!-- COLLECTION -->
 
@@ -533,21 +494,47 @@
     <div class="items">
 
         <div class="item">
-            <div class="item-number">THE WANDERER / 01</div>
-            <h4>The Road</h4>
-            <p>Overshirt · Coming soon</p>
+            <div class="item-number">
+                THE WANDERER / 01
+            </div>
+
+            <h4>
+                The Road
+            </h4>
+
+            <p>
+                Overshirt · Coming soon
+            </p>
         </div>
 
-        <div class="item">
-            <div class="item-number">THE WANDERER / 02</div>
-            <h4>The Stranger</h4>
-            <p>Trousers · Coming soon</p>
-        </div>
 
         <div class="item">
-            <div class="item-number">THE WANDERER / 03</div>
-            <h4>The Last Suitcase</h4>
-            <p>Jacket · Coming soon</p>
+            <div class="item-number">
+                THE WANDERER / 02
+            </div>
+
+            <h4>
+                The Stranger
+            </h4>
+
+            <p>
+                Trousers · Coming soon
+            </p>
+        </div>
+
+
+        <div class="item">
+            <div class="item-number">
+                THE WANDERER / 03
+            </div>
+
+            <h4>
+                The Last Suitcase
+            </h4>
+
+            <p>
+                Jacket · Coming soon
+            </p>
         </div>
 
     </div>
@@ -567,13 +554,20 @@
 </section>
 
 
+<!-- FOOTER -->
+
 <footer>
 
-    <span>© 2026 MODERN MYTH</span>
+    <span>
+        © 2026 MODERN MYTH
+    </span>
 
-    <span>STORIES WORTH WEARING</span>
+    <span>
+        STORIES WORTH WEARING
+    </span>
 
 </footer>
 
+
 </body>
-</html>
+</html>         ml
