@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODERN MYTH — Stories Worth Wearing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #11110f;
+            color: #e8e1d5;
+            font-family: Georgia, serif;
+        }
+
+        header {
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #33312b;
+        }
+
+        .logo {
+            font-size: 20px;
+            letter-spacing: 4px;
+        }
+
+        nav a {
+            color: #e8e1d5;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .hero {
+            min-height: 85vh;
