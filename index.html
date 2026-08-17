@@ -90,16 +90,39 @@
         }
 
         .hero::before {
-            content: "";
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            right: -200px;
-            top: 20%;
-            background: #27251e;
-            border-radius: 50%;
-            filter: blur(120px);
-            opacity: 0.35;
+    content: "";
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    right: -180px;
+    top: 8%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(116, 104, 78, 0.20) 0%,
+            rgba(76, 72, 58, 0.10) 35%,
+            transparent 70%
+        );
+
+    filter: blur(20px);
+    opacity: 0.8;
+        }
+
+        .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    opacity: 0.035;
+
+    background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+
+    pointer-events: none;
+    z-index: 1;
         }
 
         .hero-content {
