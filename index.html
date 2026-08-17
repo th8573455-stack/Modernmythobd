@@ -13,135 +13,185 @@
             box-sizing: border-box;
         }
 
-        body {
-            background: #11110f;
-            color: #e8e1d5;
-            font-family: Georgia, serif;
+        html {
+            scroll-behavior: smooth;
         }
 
+        body {
+            background: #0d0d0b;
+            color: #e7e0d4;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* NAVIGATION */
+
         header {
-            padding: 25px 7%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 28px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #33312b;
+            z-index: 10;
         }
 
         .logo {
-            font-size: 20px;
-            letter-spacing: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            letter-spacing: 5px;
         }
 
         nav a {
-            color: #e8e1d5;
             text-decoration: none;
-            margin-left: 25px;
-            font-size: 13px;
+            margin-left: 22px;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
             letter-spacing: 2px;
+            opacity: 0.75;
         }
 
+        nav a:hover {
+            opacity: 1;
+        }
+
+        /* HERO */
+
         .hero {
-            min-height: 85vh;
+            min-height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 8%;
+            align-items: center;
+            padding: 120px 8% 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            right: -200px;
+            top: 20%;
+            background: #27251e;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.35;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            position: relative;
+            z-index: 2;
         }
 
         .eyebrow {
-            font-size: 12px;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
             letter-spacing: 5px;
-            color: #9b9588;
-            margin-bottom: 25px;
+            color: #918b80;
+            margin-bottom: 28px;
         }
 
         h1 {
-            font-size: clamp(55px, 12vw, 140px);
-            font-weight: normal;
-            line-height: 0.9;
-            letter-spacing: -5px;
+            font-family: Arial, sans-serif;
+            font-weight: 300;
+            font-size: clamp(60px, 14vw, 170px);
+            line-height: 0.82;
+            letter-spacing: -7px;
         }
 
         .tagline {
-            margin-top: 35px;
-            font-size: 22px;
+            margin-top: 38px;
+            font-size: clamp(20px, 3vw, 30px);
             font-style: italic;
-            color: #b9b1a2;
+            color: #b9b1a3;
         }
 
-        .intro {
-            max-width: 500px;
-            margin-top: 25px;
-            line-height: 1.8;
-            color: #8f8a80;
+        .hero-poem {
+            max-width: 430px;
+            margin-top: 38px;
+            color: #817b71;
+            font-size: 15px;
         }
 
-        .button {
+        .hero-poem span {
+            display: block;
+        }
+
+        .enter {
             display: inline-block;
-            margin-top: 40px;
-            padding: 15px 28px;
-            border: 1px solid #777064;
-            color: #e8e1d5;
+            margin-top: 42px;
+            padding: 14px 26px;
+            border: 1px solid #625d54;
             text-decoration: none;
-            letter-spacing: 2px;
-            font-size: 12px;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            letter-spacing: 3px;
+            transition: 0.3s;
         }
 
-        .button:hover {
-            background: #e8e1d5;
-            color: #11110f;
+        .enter:hover {
+            background: #e7e0d4;
+            color: #0d0d0b;
         }
 
-        footer {
-            padding: 30px 7%;
-            border-top: 1px solid #33312b;
-            color: #6f6a61;
-            font-size: 11px;
-            letter-spacing: 2px;
+        /* CHAPTERS */
+
+        .chapter {
+            min-height: 100vh;
+            padding: 120px 8%;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #282722;
         }
-    </style>
-</head>
 
-<body>
+        .chapter-inner {
+            max-width: 700px;
+        }
 
-    <header>
-        <div class="logo">MODERN MYTH</div>
+        .chapter-number {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            letter-spacing: 4px;
+            color: #716c63;
+            margin-bottom: 20px;
+        }
 
-        <nav>
-            <a href="#">SHOP</a>
-            <a href="#">STORY</a>
-            <a href="#">CONTACT</a>
-        </nav>
-    </header>
+        h2 {
+            font-family: Arial, sans-serif;
+            font-weight: 300;
+            font-size: clamp(45px, 9vw, 100px);
+            line-height: 0.9;
+            letter-spacing: -4px;
+        }
 
-    <main class="hero">
+        .chapter-description {
+            margin-top: 28px;
+            color: #9a9388;
+            font-style: italic;
+        }
 
-        <div class="eyebrow">EST. 2026 · DHAKA</div>
+        .poem {
+            margin-top: 38px;
+            font-size: 17px;
+            color: #c0b8aa;
+        }
 
-        <h1>
-            MODERN<br>
-            MYTH
-        </h1>
+        .poem strong {
+            display: block;
+            margin-top: 25px;
+            color: #e7e0d4;
+            font-weight: normal;
+        }
 
-        <div class="tagline">
-            Stories Worth Wearing.
-        </div>
+        /* COLLECTION */
 
-        <p class="intro">
-            Clothing for those who carry their own mythology.
-            Where old stories meet new silhouettes,
-            and every piece becomes a chapter.
-        </p>
-
-        <div>
-            <a href="#" class="button">ENTER THE COLLECTION</a>
-        </div>
-
-    </main>
-
-    <footer>
-        © 2026 MODERN MYTH — STORIES WORTH WEARING.
-    </footer>
-
-</body>
-</html>
+        .collection {
+            padding: 120
